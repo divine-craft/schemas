@@ -1,0 +1,2 @@
+# DivineEmpire OpenAPI schemas
+
