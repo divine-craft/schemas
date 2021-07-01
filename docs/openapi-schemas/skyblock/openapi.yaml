@@ -1,0 +1,32 @@
+openapi: "3.0.3"
+info:
+  title: SkyBlock API
+  version: "1.0.0"
+  description: SKyBlock service API providing its infrastructure
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0
+
+servers:
+  - url: https://divineempire.ru/v1
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+  responses:
+    UnauthorizedError:
+      description: Access token is missing or invalid
+security:
+  - BearerAuth: []
+
+paths:
+  /islands:
+    get:
+      description: Gets all available islands
+      responses:
+        "200":
+          description: The list of islands # FIXME
+        "401":
+          $ref: "#/components/responses/UnauthorizedError"

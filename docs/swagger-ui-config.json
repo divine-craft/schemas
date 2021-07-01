@@ -1,0 +1,8 @@
+{
+  "urls": [
+    {
+      "name": "SkyBlock",
+      "url": "/schemas/skyblock/openapi.json"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DivineEmpire OpenAPI schemas</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="https://unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js" charset="UTF-8"></script>
+</head>
+<body>
+<div id="swagger-ui"></div>
+<script>
+    window.addEventListener("load", _ => {
+        SwaggerUIBundle({
+            dom_id: '#swagger-ui',
+            configUrl: 'feswagger-ui-config.json',
+        })
+    })
+</script>
+</body>
+</html>
