@@ -2,7 +2,7 @@
   "urls": [
     {
       "name": "SkyBlock",
-      "url": "schemas/skyblock/openapi.json"
+      "url": "schemas/skyblock/openapi.yaml"
     }
   ]
 }
